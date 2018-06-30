@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html ng-app="ngapp">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	{% block header %}
+		<title>WAW Framework</title>
+		<meta name="description" content="Initial waw client under angular 1.x and scss.">
+		<meta name="keywords" content="waw, waw framework">
+		<meta name="author" content="Honchar Denys">
+	{% endblock %}
+	<link rel="stylesheet" type="text/css" href="/gen/public.css">
+	<link rel="stylesheet" type="text/css" href="/css/index.css">
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-78236546-11"></script>
+	<script>
+	window.dataLayer = window.dataLayer || [];
+
+	function gtag() { dataLayer.push(arguments); }
+	gtag('js', new Date());
+
+	gtag('config', 'UA-78236546-11');
+	</script>
+
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			{% block topbar %}
+			<div class="topbar-container">
+				<span class="topbar-logo"><a href="/">Bulka Logo</a></span>
+			</div>
+			{% endblock %}
+		</div>
+		<div class="row">
+			{% block body %}{% endblock %}
+		</div>
+	</div>
+</body>
+</html>
