@@ -1,5 +1,65 @@
 {% extends '__index.html' %}
 
+{% block title %} 
+	<div class="topbar-title">
+		<div class="title">Розташування наших магазинів</div>
+		<div class="title-description">Відстань до найближчих магазинів враховуючи<br> ваше місцезнаходження</div>
+	</div>
+{% endblock %}
+
 {% block body %}
-BULKA Markets
+<div class="main">
+			<div class="section-a">
+				<div class="counter">580<sup>м</sup></div>
+				<picture>
+					<source srcset="/img/Bulka.mob.jpg" media="(max-width: 600px)">
+					<source srcset="/img/Bulka.web.jpg">
+				 	<img src="/img/Bulka.web.jpg" class="bg-image">
+				</picture>
+				<div class="counter">580<sup>м</sup></div>
+				<a href="/html/public/map.html">
+					<i class="icon icon-location"></i>
+					<div class="location">Вул. Шевченка, 3,<br> м. Кам’янець-Подільский</div></a>
+				<a href="/html/public/sales.html" class="btn">Поточні акції<i class="icon icon-arrowweb"></i></a>
+			</div>
+			<div class="section-b">
+				<div class="counter">2,5<sup>км</sup></div>
+				<picture>
+					<source srcset="/img/Bulka.mobTwo.jpg" media="(max-width: 600px)">
+					<source srcset="/img/Bulka.webTwo.jpg">
+				 	<img src="/img/Bulka.webTwo.jpg" class="bg-image">
+				</picture>			
+				<a href="/">
+					<i class="icon icon-location"></i>
+					<div class="location">Вул. Миру, 64,<br> м. Деражня</div>
+				</a>
+				<a href="/html/public/construction.html" class="btn">Поточні акції<i class="icon icon-arrowweb"></i></a>
+			</div>
+			<div class="section-c">
+					<div class="counter">3,6<sup>км</sup></div>
+					<picture>
+						<source srcset="/img/Bulka.mob.jpg" media="(max-width: 600px)">
+						<source srcset="/img/Bulka.web.jpg">
+					 	<img src="/img/Bulka.web.jpg" class="bg-image">
+					</picture>
+					<a href="/">
+						<i class="icon icon-location"></i>
+						<div class="location">Вул. Шевченка, 3,<br> м. Кам’янець-Подільский</div>
+					</a>
+					<a href="/" class="btn">Поточні акції<i class="icon icon-arrowweb"></i></a>
+			</div>
+			<div class="section-d">
+					<div class="counter">5,6<sup>км</sup></div>
+					<picture>
+						<source srcset="/img/Bulka.mob.jpg" media="(max-width: 600px)">
+						<source srcset="/img/Bulka.web.jpg">
+					 	<img src="/img/Bulka.web.jpg" class="bg-image">
+					</picture>
+					<a href="/">
+						<i class="icon icon-location"></i>
+						<div class="location">Вул. Шевченка, 3,<br> м. Кам’янець-Подільский</div>
+					</a>
+					<a href="/" class="btn">Поточні акції<i class="icon icon-arrowweb"></i></a>
+			</div>
+	</div>
 {% endblock %} 

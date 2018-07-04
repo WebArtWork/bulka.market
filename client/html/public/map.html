@@ -3,12 +3,10 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	{% block header %}
 		<title>WAW Framework</title>
 		<meta name="description" content="Initial waw client under angular 1.x and scss.">
 		<meta name="keywords" content="waw, waw framework">
 		<meta name="author" content="Honchar Denys">
-	{% endblock %}
 	<link rel="stylesheet" type="text/css" href="/gen/public.css">
 	<link rel="stylesheet" type="text/css" href="/css/index.css">
 
@@ -26,7 +24,7 @@
 </head>
 <body>
 	<!-- topbar -->
-		<div class="topbar">
+			<div class="topbar">
 				<div class="topbar-logo">
 					<a href="/"><picture>
 						<source srcset="/img/logomob.png" media="(max-width: 600px)">
@@ -34,11 +32,11 @@
 						<img src="/img/logo.png" alt="Bulka">
 					</picture></a>
 				</div>
-			{% block title %} {% endblock %} 
+				<div class="topbar-title">
+					<div class="title">Магазин на карті</div>
+					<div class="title-description">Маршрут від вашого місцезнаходження<br> до найближчого маркету BULKA</div>
+				</div>
 			</div>
-	<!-- content -->
-	{% block body %}
-	
-	{% endblock %}
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2633.870952343083!2d26.577966615365714!3d48.68883187927119!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4733c7f300a8fbc9%3A0xe2aec67195e8c546!2sBulka+Market!5e0!3m2!1sru!2sus!4v1530718282700" allowfullscreen></iframe>
 </body>
 </html>

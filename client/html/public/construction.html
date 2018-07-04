@@ -3,12 +3,10 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	{% block header %}
 		<title>WAW Framework</title>
 		<meta name="description" content="Initial waw client under angular 1.x and scss.">
 		<meta name="keywords" content="waw, waw framework">
 		<meta name="author" content="Honchar Denys">
-	{% endblock %}
 	<link rel="stylesheet" type="text/css" href="/gen/public.css">
 	<link rel="stylesheet" type="text/css" href="/css/index.css">
 
@@ -26,7 +24,7 @@
 </head>
 <body>
 	<!-- topbar -->
-		<div class="topbar">
+			<div class="topbar">
 				<div class="topbar-logo">
 					<a href="/"><picture>
 						<source srcset="/img/logomob.png" media="(max-width: 600px)">
@@ -34,11 +32,18 @@
 						<img src="/img/logo.png" alt="Bulka">
 					</picture></a>
 				</div>
-			{% block title %} {% endblock %} 
+				<div class="topbar-title">
+					<div class="title">Поточні акції</div>
+					<div class="title-description"><b>Маркет</b> на Вул. Миру, 64,<br> м. Деражня</div>
+				</div>
 			</div>
 	<!-- content -->
-	{% block body %}
-	
-	{% endblock %}
+	<div class="main">
+		<div class="section-construction">
+			<i class="icon icon-baking"></i>
+			<p><span class="inf"> В данний час інформація про акціїї<br> цього магазину відсутня</span></p>
+			<p class="button"><a href="/" class="btn_green">Інші маркети<i class="icon icon-arrowweb"></i></a></p>
+		</div>
+	</div>
 </body>
 </html>
