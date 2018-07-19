@@ -3,15 +3,12 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	{% block header %}
-		<title>WAW Framework</title>
-		<meta name="description" content="Initial waw client under angular 1.x and scss.">
-		<meta name="keywords" content="waw, waw framework">
-		<meta name="author" content="Honchar Denys">
-	{% endblock %}
+	<title>Bulka Market</title>
+	<meta name="description" content="Initial waw client under angular 1.x and scss.">
+	<meta name="keywords" content="waw, waw framework">
+	<meta name="author" content="Honchar Denys">
 	<link rel="stylesheet" type="text/css" href="/gen/public.css">
 	<link rel="stylesheet" type="text/css" href="/css/index.css">
-
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-78236546-11"></script>
 	<script>
@@ -26,16 +23,16 @@
 </head>
 <body>
 	<!-- topbar -->
-		<div class="topbar">
-				<div class="topbar-logo">
-					<a href="/"><picture>
-						<source srcset="/img/logomob.png" media="(max-width: 600px)">
-						<source srcset="/img/logo.png">
-						<img src="/img/logo.png" alt="Bulka">
-					</picture></a>
-				</div>
-			{% block title %} {% endblock %} 
-			</div>
+	<div class="topbar">
+		<div class="topbar-logo">
+			<a href="/"><picture>
+				<source srcset="/img/logomob.png" media="(max-width: 600px)">
+				<source srcset="/img/logo.png">
+				<img src="/img/logo.png" alt="Bulka">
+			</picture></a>
+		</div>
+		{% block title %} {% endblock %} 
+	</div>
 	<!-- content -->
 	{% block body %}
 	
